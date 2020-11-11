@@ -1,0 +1,117 @@
+
+/*-------------------------------------------CSS GLOBAL------------------------------------*/
+
+
+ul li{
+    list-style-type: none;
+    padding: 10px;
+    
+    
+}
+
+
+
+
+ul{
+    text-justify: auto;
+    background-color: #A11D33;
+    height: 40px;
+    margin: 0; 
+    display: flex;
+    font-style: italic;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    
+}
+
+a:hover{
+    text-decoration: underline;
+    color: yellow;
+
+}
+
+
+p{
+    text-align: justify;
+    color: whitesmoke;
+    background-color: teal;
+    background-attachment: fixed;
+}
+header h1{
+    margin: 0px;
+    padding: 10px;
+    border: 0px;
+    size: 150px;
+}
+body{
+    margin: 0px;
+}
+
+
+
+#imagen{
+    background-image: url('../image/Presentacion.jpg');
+    background-size: cover;
+    height: 1200px;
+    width: 100%;
+
+   
+}
+
+img{
+    width: 100%;
+
+}
+
+
+/*    CSS PAGINA INDEX                      */
+
+#caja{
+    width: 600px;
+    height: 100px;
+    background: blue;
+    
+}
+
+
+/*----------------------------------CSS PAGINA CONTACTO------------------------------------------*/
+
+
+.contacto{
+    width: 100%;
+    display: flex;
+}
+
+
+.formulario{
+    width: 50%;
+    text-align: center;
+    background-size: cover;
+    
+}
+
+
+.form{
+    padding-top: 50px;
+}
+
+
+
+
+
+input{
+    font-size: 16px;
+    
+    
+}
+
+.mural{
+    padding-top: 50px;
+    width: 50%;
+    
+}

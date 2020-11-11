@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big bang studio code</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="index-nuevo.html" class="logo">Big Bang Studio Code</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Hello world, <br> Yo soy <span>Jonathan Müller</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus nisi, cum ex laboriosam placeat nemo officia quasi reprehenderit numquam, doloremque magni neque hic at libero, esse voluptatibus harum recusandae. </p>
+            <a href="#">Click aquí</a>
+        </div>
+        <ul class="redes"> 
+            <li><a href="#"><img src="image/facenegro.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="image/instanegro.png" alt="instagram"></a></li>
+            <li><a href="#"><img src="image/whatsnegro.png" alt="whatsapp"></a></li>
+            <li><a href="https://www.linkedin.com/in/jonathan-m%C3%BCller-1919a793/"><img src="image/linknegro.png" alt="linkedin"></a></li>
+            
+        </ul>
+        
+                
+    </section>
+    <div id="navegacion">
+        <ul>
+            <li><a href="index-nuevo.html">Home</li>
+            <li><a href="#">La Empresa</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navegacion');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+
+        }
+
+    </script>
+    
+    
+    
+</body>
+</html>

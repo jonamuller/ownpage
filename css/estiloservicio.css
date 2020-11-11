@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 30px 100px;
+}
+
+header .logo {
+    text-decoration: none;
+    position: relative;
+    font-weight: 700;
+    font-family: 'Marck Script', cursive;
+    color: #fff;
+    font-size: 2em;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    margin-left: 40px;
+}
+
+header ul li a {
+    color: #fff;
+    
+    text-decoration: none;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.banner .imgbx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: 0.5s;
+    background-position: center;
+}
+
+.banner .imgbx img.active {
+    opacity: 1;
+}
+
+
+.control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 80px;
+}
+
+.control li {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.control li:hover {
+    background: #FFBA08;
+}
+
+.control li:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-left: 3px solid#111;
+    border-bottom: 3px solid#111;
+    transform: rotate(45deg);
+}
+
+.control li:nth-child(2):before {
+    transform: rotate(225deg);
+}
+
+.contenedor {
+    position: absolute;    
+    bottom: 0;
+    max-width: 700px;
+}
+
+.contenedor div {
+    display: none;
+}
+
+
+.contenedor div.active {
+    display: block;
+    padding: 30px;
+    padding-left: 100px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/*--------- INICIO DE MODAL emergente toggle--------------- */
+.contenedor#modal.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+/*--------- INICIO DE MODAL emergente toggle1--------------- */
+.contenedor#modal.active1 {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+/*--------- INICIO DE MODAL emergente toggle2--------------- */
+.contenedor#modal.active2 {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+/*------------ CSS EN CUADROS DE PANTALLAS ------------------------------*/
+
+.contenedor div h2 {
+    color: #fff;
+    font-size: 2em;
+}
+
+.contenedor div p {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.contenedor div a {
+    color: #111;
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #fff;
+    margin-top: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/*INICIO DE MODAL CON id= EMERGENTE-------!!!!!*/
+
+#emergente {
+    position: absolute;
+    display: flexbox ;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5;
+}
+
+
+
+
+
+#emergente.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5;
+    border-radius: 10px;
+}
+
+#emergente a {
+    color: #fff;
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #111;
+    margin-top: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 10px 0px 10px 0px;
+}
+
+#emergente p {
+    font-family: 'Righteous', cursive;
+}
+
+/*------- INICIO MODAL CON id= EMERGENTE1-------!!!!!*/
+#emergente1 {
+    position: absolute;
+    display: flexbox ;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5;
+
+}
+
+#emergente1.active1 {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5;
+    border-radius: 10px;
+}
+
+#emergente1 a {
+    color: #fff;
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #111;
+    margin-top: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 10px 0px 10px 0px;
+}
+#emergente1 p {
+    font-family: 'Righteous', cursive;
+}
+
+/*------- INICIO MODAL CON id= EMERGENTE2-------!!!!!*/
+#emergente2 {
+    position: absolute;
+    display: flexbox ;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5;
+
+}
+
+#emergente2.active2 {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5;
+    border-radius: 10px;
+}
+
+#emergente2 a {
+    color: #fff;
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #111;
+    margin-top: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 10px 0px 10px 0px;
+}
+
+#emergente2 p {
+    font-family: 'Righteous', cursive;
+}
